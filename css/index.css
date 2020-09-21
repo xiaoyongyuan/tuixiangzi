@@ -1,0 +1,61 @@
+*{
+    margin:0;
+    padding:0;
+}
+.content{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.game{
+    width:560px;
+    margin:55px auto;
+}
+.bg{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -44%);
+    width:60%;
+    height: 100%;
+    background: url("../images/bg.png") no-repeat;
+    background-size: 100% 100%;
+    z-index: -10;
+}
+
+.title{
+    width: 100%;
+    height: 60px;
+    background-color: #002DFF;
+}
+#msg{
+    padding-top: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FD5800;
+}
+.btn{
+    padding-top: 30px;
+}
+.level{
+    width: 126px;
+    height: 58px;
+    background: #FBD431;
+    border-radius: 29px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FCFF92;
+    outline: none;
+    cursor: pointer;
+}
+.explain{
+    width: 126px;
+    height: 58px;
+    background: #85C608;
+    border-radius: 29px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FCFF92;
+    outline: none;
+    cursor: pointer;
+}
