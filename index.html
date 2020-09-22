@@ -7,11 +7,12 @@
 	<link rel="stylesheet" href="css/layer.css">
 </head>
 <body onkeydown="doKeyDown(event)">
+<div class="title"></div>
 <div class="content">
-	<div class="title"></div>
-	<div class="bg"></div>
 	<div class="game" >
-		<canvas id="canvas" width="560" height="560"></canvas>
+		<div class="canvasDiv">
+			<canvas id="canvas" width="560" height="560"></canvas>
+		</div>
 		<div id="msg"></div>
 		<div class="btn">
 			<input type="button" class="level" value="上一关" onClick="NextLevel(-1)">
@@ -19,7 +20,12 @@
 			<input type="button" class="level" value="重玩本关" onClick="NextLevel(0)">
 			<input type="button" class="explain" value="游戏说明" onClick="showHelp()">
 		</div>
-		<div></div>
+		<div class="keyBtn">
+			<span class="topBtn" onclick="go('up')"></span>
+			<span class="downBtn" onclick="go('down')"></span>
+			<span class="leftBtn" onclick="go('left')"></span>
+			<span class="rightBtn" onclick="go('right')"></span>
+		</div>
 	</div>
 </div>
 
@@ -200,8 +206,7 @@
 			DrawMap(curMap);
 			//若果移动完成了进入下一关
 			if (checkFinish()) {
-				layer.msg("恭喜过关了")
-				console.log('9999999999999')
+				layer.msg("恭喜过关了!");
 				NextLevel(1);
 			}
 		}
@@ -285,7 +290,6 @@
 		//判断是否推成功
 		//与键盘上的上下左右键关联
 		function doKeyDown(event){
-			console.log(event)
 			switch (event.keyCode)
 			{
 				case 37://左键头

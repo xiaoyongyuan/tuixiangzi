@@ -3,21 +3,27 @@
     padding:0;
 }
 .content{
-    width: 100%;
-    height: 100%;
+    width: 70%;
+    height: calc(100vh - 60px);
+    background: url("../images/bg.png") no-repeat;
+    background-size: 100% 100%;
     position: relative;
+    margin: 0 auto;
+}
+canvas{
+    margin-top: 60px;
 }
 .game{
     width:560px;
-    margin:55px auto;
+    margin:0 auto;
 }
 .bg{
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -44%);
-    width:60%;
-    height: 100%;
+    transform: translate(-50%, -58%);
+    width:68%;
+    height: calc(100vh - 60px);
     background: url("../images/bg.png") no-repeat;
     background-size: 100% 100%;
     z-index: -10;
@@ -33,9 +39,10 @@
     font-size: 20px;
     font-weight: bold;
     color: #FD5800;
+    height: 98px;
 }
 .btn{
-    padding-top: 30px;
+    padding: 30px 0;
 }
 .level{
     width: 126px;
@@ -64,4 +71,171 @@
     outline: none;
     cursor: pointer;
     border: none;
+}
+.keyBtn{
+    position: absolute;
+    right:10%;
+    top:90%;
+}
+.topBtn{
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background: url("../images/top.png") no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+.downBtn{
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background: url("../images/bottom.png") no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+.leftBtn{
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background: url("../images/leftBtn.png") no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+.rightBtn{
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background: url("../images/rightBtn.png") no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+.keyBtn{
+    position: absolute;
+    right: 18%;
+    top: 67%;
+}
+.downBtn{
+    position: absolute;
+    top: 130%;
+    right: -7%;
+}
+.leftBtn{
+    position: absolute;
+    top: 130%;
+    left: -144%;
+}
+.rightBtn{
+    position: absolute;
+    top: 130%;
+    right: -150%;
+}
+@media screen and (max-width: 1600px) {
+    .title {
+        height: 40px;
+    }
+    .content{
+        width: 65%;
+        height: calc(100vh - 40px);
+    }
+    #msg{
+        padding-top: 20px;
+        font-size: 16px;
+    }
+    .btn{
+        position: absolute;
+        bottom: 0%;
+        left: 18%;
+    }
+    .explain,.level{
+        width: 80px;
+        height: 35px;
+        font-size: 15px;
+    }
+    .keyBtn{
+        position: absolute;
+        right: 18%;
+        top: 77%;
+    }
+    .topBtn,.leftBtn,.rightBtn,.downBtn{
+        width: 30px;
+        height: 30px;
+    }
+    .downBtn{
+        position: absolute;
+        top: 130%;
+        right: -7%;
+    }
+    .leftBtn{
+        position: absolute;
+        top: 130%;
+        left: -144%;
+    }
+    .rightBtn{
+        position: absolute;
+        top: 130%;
+        right: -150%;
+    }
+    canvas{
+        width: 80%;
+        height: 80%;
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width: 1366px) {
+    .title {
+        height: 40px;
+    }
+    .content{
+        width: 62%;
+        height: calc(100vh - 40px);
+    }
+    #msg{
+        padding-top: 20px;
+        font-size: 16px;
+        padding-left: 32px;
+    }
+    .btn{
+        position: absolute;
+        bottom: 5%;
+        left: 20%;
+    }
+    .explain,.level{
+        width: 80px;
+        height: 35px;
+        font-size: 15px;
+    }
+    .keyBtn{
+        position: absolute;
+        right: 9%;
+        top: 72%;
+    }
+    .topBtn,.leftBtn,.rightBtn,.downBtn{
+        width: 30px;
+        height: 30px;
+    }
+    .downBtn{
+        position: absolute;
+        top: 130%;
+        right: -7%;
+    }
+    .leftBtn{
+        position: absolute;
+        top: 130%;
+        left: -144%;
+    }
+    .rightBtn{
+        position: absolute;
+        top: 130%;
+        right: -150%;
+    }
+    .canvasDiv{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    canvas{
+        width: 70%;
+        height: 70%;
+        margin-top: 40px;
+    }
 }
