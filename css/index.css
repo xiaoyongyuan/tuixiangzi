@@ -40,22 +40,28 @@
 .level{
     width: 126px;
     height: 58px;
-    background: #FBD431;
+    background: url("../images/btn.png") no-repeat;
+    background-size: 100% 100%;
+    background-color: #FBD431;
     border-radius: 29px;
     font-size: 18px;
     font-weight: bold;
     color: #FCFF92;
     outline: none;
     cursor: pointer;
+    border: none;
 }
 .explain{
     width: 126px;
     height: 58px;
-    background: #85C608;
+    background: url("../images/btn.png") no-repeat;
+    background-size: 100% 100%;
+    background-color: #85C608;
     border-radius: 29px;
     font-size: 18px;
     font-weight: bold;
     color: #FCFF92;
     outline: none;
     cursor: pointer;
+    border: none;
 }
