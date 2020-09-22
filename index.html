@@ -3,16 +3,13 @@
 <head><!--头部-->
 <meta charset="UTF-8"><!--字符编码：utf-8国际编码  gb2312中文编码-->
 <title>HTML5 Canvas推箱子小游戏源码 - 代码笔记</title>
-<style>/*css样式表的衣柜*/
-
-</style>
-	<link rel="stylesheet" href="./css/index.css">
+<link rel="stylesheet" href="./css/index.css">
 </head>
-<body>
+<body onkeydown="doKeyDown(event)">
 <div class="content">
 	<div class="title"></div>
 	<div class="bg"></div>
-	<div class="game" onkeydown="doKeyDown(event)">
+	<div class="game" >
 		<canvas id="canvas" width="560" height="560"></canvas>
 		<div id="msg"></div>
 		<div class="btn">
