@@ -111,7 +111,7 @@ canvas{
 .keyBtn{
     position: absolute;
     right: 18%;
-    top: 67%;
+    top: 64%;
 }
 .downBtn{
     position: absolute;
@@ -127,6 +127,12 @@ canvas{
     position: absolute;
     top: 130%;
     right: -150%;
+}
+@media screen and (max-width: 1920px){
+    #msg{
+        padding-top: 20px;
+        height: 90px;
+    }
 }
 @media screen and (max-width: 1600px) {
     .title {
