@@ -18,7 +18,7 @@
         }
         // 乘以100，px : rem = 100 : 1
         docEl.style.fontSize = 100 * (width / 2560) + 'px';
-        let myCanvas = document.getElementById('game');
+        let myCanvas = document.getElementById('canvas');
         myCanvas.style.transform = 'scale('+ 1.1 * (width / 2560) +')';
         docEl.style.fontSize = 100 * (width / 2560) + 'px';
     };
