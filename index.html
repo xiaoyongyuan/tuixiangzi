@@ -43,6 +43,7 @@
 		var curMan;//初始化小人
 		var iCurlevel = 0;//关卡数
 		var moveTimes = 0;//移动了多少次
+		var ischecked = false;
 		//预加载所有图片
 		var oImgs = {
 			"block" : "images/block.gif",
@@ -151,6 +152,7 @@
 		}
 		//下一关
 		function NextLevel(i){
+			ischecked = true;
 			//iCurlevel当前的地图关数
 			iCurlevel = iCurlevel + i;
 			if (iCurlevel<0)
