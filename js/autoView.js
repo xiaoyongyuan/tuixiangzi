@@ -13,14 +13,15 @@
     docEl.firstElementChild.appendChild(metaEl);
     var recalc = function () {
         var width = docEl.clientWidth;
-        if (width / dpr > 2560) {
-            width = 2560 * dpr;
+        if (width / dpr > 4096) {
+            width = 4096 * dpr;
         }
+        console.log(width,"00")
         // 乘以100，px : rem = 100 : 1
-        docEl.style.fontSize = 100 * (width / 2560) + 'px';
+        docEl.style.fontSize = 100 * (width / 4096) + 'px';
         let myCanvas = document.getElementById('canvas');
-        myCanvas.style.transform = 'scale('+ 1.1 * (width / 2560) +')';
-        docEl.style.fontSize = 100 * (width / 2560) + 'px';
+        myCanvas.style.transform = 'scale('+ 1.1 * (width / 4096) +')';
+        docEl.style.fontSize = 100 * (width / 4096) + 'px';
     };
     recalc();
     if (!doc.addEventListener) return;
