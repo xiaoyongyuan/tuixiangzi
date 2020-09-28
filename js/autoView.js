@@ -20,7 +20,7 @@
         // 乘以100，px : rem = 100 : 1
         docEl.style.fontSize = 100 * (width / 4096) + 'px';
         let myCanvas = document.getElementById('canvas');
-        myCanvas.style.transform = 'scale('+ 1.1 * (width / 4096) +')';
+        myCanvas.style.transform = 'scale('+ 2 * (width / 4096) +')';
         docEl.style.fontSize = 100 * (width / 4096) + 'px';
     };
     recalc();
